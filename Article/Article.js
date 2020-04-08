@@ -85,6 +85,13 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Fake Article',
+    date: 'Jan 4rd 2020',
+    firstParagraph: `lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk`,
+    secondParagraph: `lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk`,
+    thirdParagraph: `lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk lorem ipsum lorem ipsum lorem ipsum beep boop bop robot noises eeeeeeeeekk`
   }
 ];
 
