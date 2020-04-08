@@ -112,3 +112,45 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+function makeArticle({ title, date, firstParagraph, secondParagraph, thirdParagraph}) {
+
+  // First Instantiate all elements needed for the article like template above
+  const article = document.createElement('div')
+  const articleTitle = document.createElement('h2')
+  const articleDate = document.createElement('p')
+  const articleParagraphOne = document.createElement('p')
+  const articleParagraphTwo = document.createElement('p')
+  const articleParagraphThree = document.createElement('p')
+  const articleExpandButton = document.createElement('span')
+
+  // Second Setup the structure of our elements
+
+  article.appendChild(articleTitle)
+  article.appendChild(articleDate)
+  article.appendChild(articleParagraphOne)
+  article.appendChild(articleParagraphTwo)
+  article.appendChild(articleParagraphThree)
+  article.appendChild(articleExpandButton)
+
+  // Add classes to our elements
+
+  article.classList.add('article')
+  articleDate.classList.add('date')
+  articleExpandButton.add('expandButton')
+
+  // Set text content
+
+  articleTitle.textContent = title
+  articleDate.textContent = date
+  articleParagraphOne.textContent = firstParagraph
+  articleParagraphTwo.textContent = secondParagraph
+  articleParagraphThree.textContent = thirdParagraph
+
+  articleExpandButton.addEventListener('click', event => {
+    articleExpandButton.classList.toggle('article-open')
+  })
+
+  return article
+}
+makeArticle({})
