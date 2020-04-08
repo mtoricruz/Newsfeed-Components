@@ -34,26 +34,26 @@ let menuItems = [
   
 */
 
-// function menuCreator(menuData){
+function menuCreator(menuData){
 
-//   const menuDiv = document.createElement('div')
-//   const menuList = document.createElement('ul')
+  const menuDiv = document.createElement('div')
+  const menuList = document.createElement('ul')
 
-//   menuDiv.classList.add('menu')
+  menuDiv.classList.add('menu')
 
-//   const listElements = menuData.map(liText => {
+  const listElements = menuData.map(liText => {
 
-//     const newListElements = document.createElement('li');
+    const newListElements = document.createElement('li');
 
-//     newListElements.textContent = liText
+    newListElements.textContent = liText
 
-//   })
+  })
   
-//   const menuButton = document.querySelector('menu-button')
+  const menuButton = document.querySelector('menu-button')
 
-//   menuButton.addEventListener('click', event => {
+  menuButton.addEventListener('click', event => {
 
-//   })
+  })
 
-//   return newListElements
-// }
+  return newListElements
+}

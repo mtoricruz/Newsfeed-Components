@@ -103,14 +103,6 @@ const data = [
 
   Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
 
-  Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
-
-  Step 3: return the entire component.
-
-  Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
-
-  Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
-
 */
 
 function makeArticle({ title, date, firstParagraph, secondParagraph, thirdParagraph}) {
@@ -137,7 +129,7 @@ function makeArticle({ title, date, firstParagraph, secondParagraph, thirdParagr
 
   article.classList.add('article')
   articleDate.classList.add('date')
-  articleExpandButton.add('expandButton')
+  articleExpandButton.classList.add('expandButton')
 
   // Set text content
 
@@ -146,11 +138,29 @@ function makeArticle({ title, date, firstParagraph, secondParagraph, thirdParagr
   articleParagraphOne.textContent = firstParagraph
   articleParagraphTwo.textContent = secondParagraph
   articleParagraphThree.textContent = thirdParagraph
+  articleExpandButton.textContent = 'Read More'
 
-  articleExpandButton.addEventListener('click', event => {
-    articleExpandButton.classList.toggle('article-open')
+  // Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
+
+  articleExpandButton.addEventListener('click', () => {
+  
+    article.classList.toggle('article-open')
+    
   })
 
+  // Step 3: return the entire component.
   return article
 }
+
 makeArticle({})
+
+// Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
+
+const articleElements = data.map(data => makeArticle(data))
+
+articleElements.forEach(articleElements => {
+  document.querySelector('.articles').appendChild(articleElements)
+})
+
+// Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
+
